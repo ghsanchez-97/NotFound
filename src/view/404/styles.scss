@@ -1,0 +1,41 @@
+$colorone: #f1952b;
+$colortwo: #2b2828;
+$colorthree: #d8d8d8;
+$colorfour: #3b3b3b;
+$colorfive: #313131;
+$colorsix: #464646;
+$colorseven: #290d17;
+
+.notFound__container {
+  background-color: $colorthree;
+  height: 100vh;
+
+  .notFound__content {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+
+    .notFound__home {
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        background-color: $colorone;
+        color: $colorsix;
+        transition: .8s;
+
+        &:hover{
+            background-color: darken($colorone, 10%);
+            color: $colorthree;
+        }
+      }
+    }
+  }
+}
